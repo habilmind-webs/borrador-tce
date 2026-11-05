@@ -717,3 +717,7 @@ a[href="#"][data-pendiente]{cursor:not-allowed}
 .ind-tabla-wrap{margin-top:1.25rem;overflow-x:auto}
 .ft-edad-niveles{margin:.5rem 0 0;padding-left:1.1rem;list-style:disc}
 .ft-edad-niveles li{margin:.25rem 0;color:var(--mut)}
+
+/* TCE 05/11 (revisión HOME = CAI): huecos de copy pendiente (data-pendiente) en bloques que CAI/COB sí tienen */
+.tarjeta-imp[data-pendiente],.ft-spec[data-pendiente]{opacity:.55;border-style:dashed}
+.pend-txt{color:var(--mut);font-style:italic}
