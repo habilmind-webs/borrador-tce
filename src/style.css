@@ -727,3 +727,13 @@ a[href="#"][data-pendiente]{cursor:not-allowed}
 
 /* Franja «Desarrollado por ICCE · Y la tecnología de Habilmind» con ventana de 932–1023 px CSS (p. ej. pantalla grande a media pantalla o con escalado 150–200 %): misma disposición y ancho que a 1440 px (3 filas, 497 px), centrada; a 1024 px o más y por debajo de 768 px no cambia nada */
 @media (min-width:768px) and (max-width:1023px){.hero-dev{max-width:31.05rem;margin-left:auto;margin-right:auto;justify-content:flex-start}.hero-dev .insignia-icce{justify-content:flex-start}}
+
+/* 10/11 · Rosario vía DC (hilo f1c880c7): #indicadores de la home como listado vertical de 4 filas (icono en círculo suave + h3 y frase); ejemplos tras los dos puntos en color de acento */
+.ind-lista{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--borde);border-top:3px solid var(--acc);box-shadow:var(--sombra)}
+.ind-fila{display:grid;grid-template-columns:auto 1fr;gap:1.25rem;align-items:center;padding:1.5rem 1.75rem}
+.ind-fila+.ind-fila{border-top:1px solid var(--borde)}
+.ind-ico{display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:#e8eef5;color:var(--acc);border:1px solid #cdd8e6;flex:none}
+.ind-ico svg{width:1.375rem;height:1.375rem}
+.ind-txt h3{margin:0 0 .35rem}.ind-txt p{margin:0;color:var(--mut)}.ind-txt p strong{color:var(--fg)}
+.ind-ej{color:var(--acc);font-weight:500}
+@media (max-width:639px){.ind-fila{gap:1rem;padding:1.25rem 1.1rem;align-items:start}.ind-ico{width:2.5rem;height:2.5rem}.ind-ico svg{width:1.25rem;height:1.25rem}}
