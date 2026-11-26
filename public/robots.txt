@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://tce.habilmind.net/sitemap.xml
