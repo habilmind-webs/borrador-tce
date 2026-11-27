@@ -767,3 +767,8 @@ a[href="#"][data-pendiente]{cursor:not-allowed}
 .pr-herr a{color:var(--mut);text-decoration:none}.pr-herr a:hover{color:var(--fg);text-decoration:underline}
 .pr-btns{display:grid;gap:.6rem}
 .pr-btns .btn{width:100%;height:2.75rem}
+/* Logo oficial de Habilmind con enlace en la tarjeta de suscripción (como en superadmisiones: 44 px móvil, 48 px escritorio) */
+.pr-logo-hm{display:block;width:fit-content;margin:.5rem 0 .75rem;border-radius:2px}
+.pr-logo-hm:focus-visible{outline:none;box-shadow:0 0 0 2px #fff,0 0 0 4px var(--pri)}
+.pr-logo-hm img{display:block;height:2.75rem;width:auto}
+@media (min-width:640px){.pr-logo-hm img{height:3rem}}
