@@ -74,3 +74,7 @@ import './expertos.js';
 // Idiomas de la ficha técnica desde la hoja pública de idiomas (como socioemociograma.com); fallback = HTML estático.
 import { initIdiomasHoja } from './idiomas-hoja.js';
 initIdiomasHoja();
+
+// Moneda por IP en /precios (mismo sistema que socioemociograma): EUR en ES/PT, USD en el resto.
+import { initMoneda } from './moneda.js';
+initMoneda();
